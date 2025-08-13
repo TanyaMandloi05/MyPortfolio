@@ -12,10 +12,9 @@ const Navbar = () => {
       isOpen ? "justify-end" : "justify-between"
     }`}
   >
-    {/* Show heading only if sidebar is closed */}
     {!isOpen && (
-      <h1 className="text-purple-500 font-bold">
-        My Portfolio
+      <h1 className="bg-gradient-to-r from-purple-800 to-purple-400  bg-clip-text text-transparent font-bold ">
+        MyPortfolio
       </h1>
     )}
 
@@ -33,8 +32,6 @@ const Navbar = () => {
           <FaBars />
         </button>
       </div>
-
-      {/* Mobile Sidebar */}
       <div
         className={`fixed top-0 right-0 h-full w-64  bg-[#100f12] text-white transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
