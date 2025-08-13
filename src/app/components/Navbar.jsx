@@ -13,16 +13,16 @@ const Navbar = () => {
     }`}
   >
     {!isOpen && (
-      <h1 className="bg-gradient-to-r from-purple-800 to-purple-400  bg-clip-text text-transparent font-bold ">
+      <h1 className="bg-gradient-to-r from-purple-800 to-purple-400  bg-clip-text text-transparent font-bold text-2xl">
         MyPortfolio
       </h1>
     )}
 
-        <ul className="hidden md:flex gap-8 font-semibold text-white">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+        <ul className="hidden md:flex gap-8 font-semibold text-white ">
+          <li href="#home" className="hover:text-purple-800 hover:tracking-wider cursor-pointer">Home</li>
+          <li href="#about" className="hover:text-purple-800 hover:tracking-wider cursor-pointer">About</li>
+          <li href="#projects"className="hover:text-purple-800 hover:tracking-wider cursor-pointer">Projects</li>
+          <li href="#contact"className="hover:text-purple-800 hover:tracking-wider cursor-pointer">Contact</li>
         </ul>
 
         <button
