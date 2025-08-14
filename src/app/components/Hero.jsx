@@ -18,7 +18,7 @@ const Hero = () => {
         delay={150}
         animateBy="words"
         direction="top"
-        className="text-4xl sm:text-6xl font-bold text-purple-500 mb-8"
+        className="text-4xl sm:text-6xl font-bold text-purple-400 mb-8"
       />
 
       <BlurText
