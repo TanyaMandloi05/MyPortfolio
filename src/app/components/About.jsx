@@ -41,7 +41,12 @@ const About = () => {
             className="flex flex-col sm:items-start"
           >
             <p className="w-96 text-gray-400 text-xl">
-              I’m an Integrated MCA student at Acropolis Institute of Technology and Research (CGPA 7.89).I specialize in full-stack web development and like experimenting with new tools and frameworks. I started with C and I’m steadily building my skills through coursework and practice. If you’re looking for someone who’s eager to learn, grow, and contribute, I’d be excited to connect!
+              I’m an Integrated MCA student at Acropolis Institute of Technology
+              and Research (CGPA 7.89).I specialize in full-stack web
+              development and like experimenting with new tools and frameworks.
+              I started with C and I’m steadily building my skills through
+              coursework and practice. If you’re looking for someone who’s eager
+              to learn, grow, and contribute, I’d be excited to connect!
             </p>
 
             <div className="mt-8">
