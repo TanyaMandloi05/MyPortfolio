@@ -19,10 +19,11 @@ const Navbar = () => {
     )}
 
         <ul className="hidden md:flex gap-8 font-semibold text-white ">
-          <li href="#home" className="hover:text-purple-800 hover:tracking-wider cursor-pointer">Home</li>
-          <li href="#about" className="hover:text-purple-800 hover:tracking-wider cursor-pointer">About</li>
-          <li href="#projects"className="hover:text-purple-800 hover:tracking-wider cursor-pointer">Projects</li>
-          <li href="#contact"className="hover:text-purple-800 hover:tracking-wider cursor-pointer">Contact</li>
+          <li  className="hover:text-purple-800 hover:tracking-wider cursor-pointer"><a href="#home">Home</a></li>
+          <li className="hover:text-purple-800 hover:tracking-wider cursor-pointer"><a href="#about">About</a></li>
+          <li className="hover:text-purple-800 hover:tracking-wider cursor-pointer"><a href="#skills">Skills</a></li>
+          <li className="hover:text-purple-800 hover:tracking-wider cursor-pointer"><a href="#project">Projects</a></li>
+          <li className="hover:text-purple-800 hover:tracking-wider cursor-pointer"><a href="#contact">Contact</a></li>
         </ul>
 
         <button
