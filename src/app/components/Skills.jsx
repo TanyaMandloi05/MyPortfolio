@@ -20,7 +20,7 @@ import { TbApi } from "react-icons/tb";
 
 const Skills = () => {
   return (
-    <section className=" bg-black  relative min-h-screen">
+    <section className=" bg-black  relative min-h-screen" id="skills">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-purple-700 rounded-full blur-[150px] opacity-30"></div>
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-blue-700 rounded-full blur-[150px] opacity-30"></div>
@@ -36,6 +36,7 @@ const Skills = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
+               viewport={{ once: true }}
               className="card w-80 h-70 border border-purple-400 ring  hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400  rounded-md"
             >
               <h2 className="text-center mt-8 text-white text-lg underline underline-offset-6">
@@ -60,6 +61,7 @@ const Skills = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
+               viewport={{ once: true }}
               className="card w-80 h-70 border border-purple-400 ring  hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400  rounded-md"
             >
               <h2 className="text-center mt-8 text-white text-lg underline underline-offset-6">
@@ -106,6 +108,7 @@ const Skills = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
+               viewport={{ once: true }}
               className="card w-80 h-70 border border-purple-400 ring  hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400  rounded-md"
             >
               <h2 className="text-center mt-8 text-white text-lg underline underline-offset-6">
@@ -137,6 +140,7 @@ const Skills = () => {
              initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
+             viewport={{ once: true }}
             className="card w-80 h-70 border border-purple-400 ring  hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400  rounded-md">
               <h2 className="text-center mt-8 text-white text-lg underline underline-offset-6">
                 Database
@@ -160,6 +164,7 @@ const Skills = () => {
              initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
+             viewport={{ once: true }}
             className="card w-80 h-70 border border-purple-400 ring  hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400  rounded-md">
               <h2 className="text-center mt-8 text-white text-lg underline underline-offset-6">
                 Devloper tools

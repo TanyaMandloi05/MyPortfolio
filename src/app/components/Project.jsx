@@ -4,7 +4,7 @@ import Carousel from "../../animations/Carousel";
 import Image from "next/image";
 const Project = () => {
   return (
-    <div className="bg-black relative">
+    <div className="bg-black relative" id="project">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-purple-700 rounded-full blur-[150px] opacity-30"></div>
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-blue-700 rounded-full blur-[150px] opacity-30"></div>
@@ -22,7 +22,8 @@ const Project = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="card w-[450px] h-[470px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
+               viewport={{ once: true }}
+              className="card w-[350] h-[500] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
             >
               <img
                 src="/handyhub6.png"
@@ -67,7 +68,8 @@ const Project = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="card w-[450px] h-[470px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
+               viewport={{ once: true }}
+              className="card  w-[350] h-[500] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
             >
               <img
                 src="/wanderlust1.png"
@@ -112,7 +114,8 @@ const Project = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="card w-[450px] h-[470px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
+               viewport={{ once: true }}
+              className="card  w-[350] h-[500] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
             >
               <img
                 src="/syncChat.png"
@@ -156,7 +159,8 @@ const Project = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="card w-[450px] h-[460px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
+               viewport={{ once: true }}
+              className="card  w-[350] h-[500] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
             >
               <img
                 src="/portfolio1.png"
@@ -195,7 +199,8 @@ const Project = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="card w-[450px] h-[460px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
+               viewport={{ once: true }}
+              className="card  w-[350] h-[500] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
             >
               <img
                 src="/Zerodha.png"

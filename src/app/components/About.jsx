@@ -19,6 +19,7 @@ const About = () => {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
+           viewport={{ once: true }}
           className="text-center bg-gradient-to-r from-purple-800 to-purple-200 bg-clip-text text-transparent font-bold text-4xl"
         >
           About me
@@ -29,6 +30,7 @@ const About = () => {
             initial={{ opacity: 0, x: -150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
+             viewport={{ once: true }}
             src="/Tanya.jpg"
             className="h-80 w-80 rounded-full object-cover"
             alt="Tanya"
@@ -38,9 +40,10 @@ const About = () => {
             initial={{ opacity: 0, x: 150 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="flex flex-col sm:items-start"
+             viewport={{ once: true }}
+            className="flex flex-col sm:items-start flex-wrap"
           >
-            <p className="w-96 text-gray-400 text-xl">
+            <p className="max-w-md sm:max-w-lg text-gray-400 text-xl">
               I’m an Integrated MCA student at Acropolis Institute of Technology
               and Research (CGPA 7.89).I specialize in full-stack web
               development and like experimenting with new tools and frameworks.

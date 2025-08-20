@@ -47,10 +47,11 @@ const Navbar = () => {
         </div>
 
         <ul className="flex flex-col items-center gap-6 font-semibold mt-10">
-          <li className="hover:text-purple-400 cursor-pointer">Home</li>
-          <li className="hover:text-purple-400 cursor-pointer">About</li>
-          <li className="hover:text-purple-400 cursor-pointer">Projects</li>
-          <li className="hover:text-purple-400 cursor-pointer">Contact</li>
+          <li className="hover:text-purple-400 cursor-pointer"><a href="#home">Home</a></li>
+          <li className="hover:text-purple-400 cursor-pointer"><a href="#about">About</a></li>
+          <li className="hover:text-purple-400 cursor-pointer"><a href="#skills">Skills</a></li>
+          <li className="hover:text-purple-400 cursor-pointer"><a href="#project">Projects</a></li>
+          <li className="hover:text-purple-400 cursor-pointer"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
