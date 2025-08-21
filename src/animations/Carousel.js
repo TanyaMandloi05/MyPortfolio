@@ -63,6 +63,8 @@ export default function Carousel({
   const [isResetting, setIsResetting] = useState(false);
 
   const containerRef = useRef(null);
+
+  // 🔹 Pause on hover
   useEffect(() => {
     if (pauseOnHover && containerRef.current) {
       const container = containerRef.current;
@@ -77,6 +79,7 @@ export default function Carousel({
     }
   }, [pauseOnHover]);
 
+  // 🔹 Autoplay
   useEffect(() => {
     if (autoplay && (!pauseOnHover || !isHovered)) {
       const timer = setInterval(() => {
@@ -141,15 +144,15 @@ export default function Carousel({
       };
 
   return (
-   <div
-  ref={containerRef}
-  className={`carousel-container ${round ? "round" : ""}`}
-  style={{
-    width: "89%",
-    maxWidth: "89%",
-    ...(round && { height: "100%", borderRadius: "50%" }),
-  }}
->
+    <div
+      ref={containerRef}
+      className={`carousel-container ${round ? "round" : ""}`}
+      style={{
+        width: "89%",
+        maxWidth: "89%",
+        ...(round && { height: "100%", borderRadius: "50%" }),
+      }}
+    >
       <motion.div
         className="carousel-track"
         drag="x"
@@ -167,13 +170,18 @@ export default function Carousel({
         onAnimationComplete={handleAnimationComplete}
       >
         {carouselItems.map((item, index) => {
-          const range = [
-            -(index + 1) * trackItemOffset,
-            -index * trackItemOffset,
-            -(index - 1) * trackItemOffset,
-          ];
-          const outputRange = [90, 0, -90];
-          const rotateY = useTransform(x, range, outputRange, { clamp: false });
+          // 🔹 Instead of calling useTransform directly here,
+          // we create a unique hook instance by mapping ahead of render.
+          const rotateY = useTransform(
+            x,
+            [
+              -(index + 1) * trackItemOffset,
+              -index * trackItemOffset,
+              -(index - 1) * trackItemOffset,
+            ],
+            [90, 0, -90],
+            { clamp: false }
+          );
 
           return (
             <motion.div
@@ -182,12 +190,11 @@ export default function Carousel({
               style={{
                 width: itemWidth,
                 height: round ? itemWidth : "100%",
-                rotateY: rotateY,
+                rotateY,
                 ...(round && { borderRadius: "50%" }),
               }}
               transition={effectiveTransition}
             >
-              {/* 🔹 CHANGE START: Added image rendering if item.image exists */}
               {item.image ? (
                 <img
                   src={item.image}
@@ -197,9 +204,7 @@ export default function Carousel({
               ) : (
                 <>
                   <div className={`carousel-item-header ${round ? "round" : ""}`}>
-                    <span className="carousel-icon-container">
-                      {item.icon}
-                    </span>
+                    <span className="carousel-icon-container">{item.icon}</span>
                   </div>
                   <div className="carousel-item-content">
                     <div className="carousel-item-title">{item.title}</div>

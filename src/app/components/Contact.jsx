@@ -54,13 +54,13 @@ const Contact = () => {
             I’m eager to learn, grow, and contribute to meaningful work, and I’d love to hear from you!
           </p>
           <div className="flex gap-4 mt-4">
-            <a className="w-12 h-12 flex items-center justify-center rounded-full border border-purple-400 hover:bg-purple-400 text-white text-2xl">
+            <a href="mailto:tanyamandloi2003@gmail.com" className="w-12 h-12 flex items-center justify-center rounded-full border border-purple-400 hover:bg-purple-400 text-white text-2xl">
               <CiMail />
             </a>
-            <a className="w-12 h-12 flex items-center justify-center rounded-full border border-purple-400 hover:bg-purple-400 text-white text-2xl">
+            <a href="https://www.linkedin.com/in/tanyamandloi/" className="w-12 h-12 flex items-center justify-center rounded-full border border-purple-400 hover:bg-purple-400 text-white text-2xl">
               <CiLinkedin />
             </a>
-            <a className="w-12 h-12 flex items-center justify-center rounded-full border border-purple-400 hover:bg-purple-400 text-white text-2xl">
+            <a href="https://github.com/TanyaMandloi05" className="w-12 h-12 flex items-center justify-center rounded-full border border-purple-400 hover:bg-purple-400 text-white text-2xl">
               <FaGithub />
             </a>
             <a className="w-12 h-12 flex items-center justify-center rounded-full border border-purple-400 hover:bg-purple-400 text-white text-2xl">

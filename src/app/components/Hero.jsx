@@ -30,17 +30,20 @@ const Hero = () => {
         className="text-gray-400 text-xl sm:text-2xl max-w-2xl mb-8 md:ml-8"
       />
       <div className="flex gap-4 mb-[150]">
-        <motion.button
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
-           viewport={{ once: true }}
-          className="px-2 py-2 sm:px-6 sm:py-3 bg-purple-500 text-white rounded-lg font-medium hover:bg-purple-600 transition cursor-pointer"
-        >
-          View My Work
-        </motion.button>
+        <a href="https://drive.google.com/file/d/1HRAFD7QKdxDtDoNhJ83qlIQKWMNJRCOG/view?usp=sharing">
+          <motion.button
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="px-2 py-2 sm:px-6 sm:py-3 bg-purple-500 text-white rounded-lg font-medium hover:bg-purple-600 transition cursor-pointer"
+          >
+            View My Work
+          </motion.button>
+        </a>
 
-        <motion.button
+        <a href="#contact">
+          <motion.button
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
@@ -49,6 +52,7 @@ const Hero = () => {
         >
           Get In Touch
         </motion.button>
+        </a>
       </div>
     </section>
   );
