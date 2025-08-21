@@ -49,9 +49,9 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
            viewport={{ once: true }}
           className="px-2 py-2 sm:px-6 sm:py-3 border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white cursor-pointer transition"
-        >
-          Get In Touch
-        </motion.button>
+          >
+            Get In Touch
+          </motion.button>
         </a>
       </div>
     </section>

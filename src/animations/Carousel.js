@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "motion/react";
 import { FiCircle, FiCode, FiFileText, FiLayers, FiLayout } from "react-icons/fi";
+import Image from "next/image"; // ✅ Use Next.js optimized image
 
 import "./Carousel.css";
 
@@ -43,6 +44,50 @@ const VELOCITY_THRESHOLD = 500;
 const GAP = 16;
 const SPRING_OPTIONS = { type: "spring", stiffness: 300, damping: 30 };
 
+function CarouselItem({ item, index, x, trackItemOffset, itemWidth, round, transition }) {
+  // ✅ useTransform is now inside its own component (legal hook usage)
+  const range = [
+    -(index + 1) * trackItemOffset,
+    -index * trackItemOffset,
+    -(index - 1) * trackItemOffset,
+  ];
+  const outputRange = [90, 0, -90];
+  const rotateY = useTransform(x, range, outputRange, { clamp: false });
+
+  return (
+    <motion.div
+      className={`carousel-item ${round ? "round" : ""}`}
+      style={{
+        width: itemWidth,
+        height: round ? itemWidth : "100%",
+        rotateY,
+        ...(round && { borderRadius: "50%" }),
+      }}
+      transition={transition}
+    >
+      {item.image ? (
+        <Image
+          src={item.image}
+          alt={item.title || `Slide ${index + 1}`}
+          width={itemWidth}
+          height={itemWidth}
+          className="object-cover rounded-md item-img"
+        />
+      ) : (
+        <>
+          <div className={`carousel-item-header ${round ? "round" : ""}`}>
+            <span className="carousel-icon-container">{item.icon}</span>
+          </div>
+          <div className="carousel-item-content">
+            <div className="carousel-item-title">{item.title}</div>
+            <p className="carousel-item-description">{item.description}</p>
+          </div>
+        </>
+      )}
+    </motion.div>
+  );
+}
+
 export default function Carousel({
   items = DEFAULT_ITEMS,
   baseWidth = 300,
@@ -63,8 +108,6 @@ export default function Carousel({
   const [isResetting, setIsResetting] = useState(false);
 
   const containerRef = useRef(null);
-
-  // 🔹 Pause on hover
   useEffect(() => {
     if (pauseOnHover && containerRef.current) {
       const container = containerRef.current;
@@ -79,7 +122,6 @@ export default function Carousel({
     }
   }, [pauseOnHover]);
 
-  // 🔹 Autoplay
   useEffect(() => {
     if (autoplay && (!pauseOnHover || !isHovered)) {
       const timer = setInterval(() => {
@@ -169,53 +211,20 @@ export default function Carousel({
         transition={effectiveTransition}
         onAnimationComplete={handleAnimationComplete}
       >
-        {carouselItems.map((item, index) => {
-          // 🔹 Instead of calling useTransform directly here,
-          // we create a unique hook instance by mapping ahead of render.
-          const rotateY = useTransform(
-            x,
-            [
-              -(index + 1) * trackItemOffset,
-              -index * trackItemOffset,
-              -(index - 1) * trackItemOffset,
-            ],
-            [90, 0, -90],
-            { clamp: false }
-          );
-
-          return (
-            <motion.div
-              key={index}
-              className={`carousel-item ${round ? "round" : ""}`}
-              style={{
-                width: itemWidth,
-                height: round ? itemWidth : "100%",
-                rotateY,
-                ...(round && { borderRadius: "50%" }),
-              }}
-              transition={effectiveTransition}
-            >
-              {item.image ? (
-                <img
-                  src={item.image}
-                  alt={item.title || `Slide ${index + 1}`}
-                  className="object-cover rounded-md item-img"
-                />
-              ) : (
-                <>
-                  <div className={`carousel-item-header ${round ? "round" : ""}`}>
-                    <span className="carousel-icon-container">{item.icon}</span>
-                  </div>
-                  <div className="carousel-item-content">
-                    <div className="carousel-item-title">{item.title}</div>
-                    <p className="carousel-item-description">{item.description}</p>
-                  </div>
-                </>
-              )}
-            </motion.div>
-          );
-        })}
+        {carouselItems.map((item, index) => (
+          <CarouselItem
+            key={index}
+            item={item}
+            index={index}
+            x={x}
+            trackItemOffset={trackItemOffset}
+            itemWidth={itemWidth}
+            round={round}
+            transition={effectiveTransition}
+          />
+        ))}
       </motion.div>
+
       <div className={`carousel-indicators-container ${round ? "round" : ""}`}>
         <div className="carousel-indicators">
           {items.map((_, index) => (
