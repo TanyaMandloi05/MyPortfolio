@@ -49,7 +49,7 @@ const Project = () => {
 
                 <div className="flex gap-4 mt-4">
                   <a
-                    href="handyhub-1.onrender.com/products"
+                    href="https://handyhub-1.onrender.com/"
                     className="flex-1 px-4 py-2 text-center border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white transition"
                   >
                     Live Demo
