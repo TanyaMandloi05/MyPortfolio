@@ -31,8 +31,8 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
              viewport={{ once: true }}
-            src="/Tanya.jpg"
-            className="h-80 w-80 rounded-full object-cover"
+            src="/tanya4.jpg"
+            className="h-90 w-90 rounded-full object-cover"
             alt="Tanya"
           />
 
