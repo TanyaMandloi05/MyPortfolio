@@ -22,18 +22,18 @@ const Project = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-               viewport={{ once: true }}
+              viewport={{ once: true }}
               className="card w-[350] h-[500] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
             >
               <img
-                src="/handyhub6.png"
+                src="/craft-cart.png"
                 alt=""
                 className="w-[430px] p-2 rounded-t-xl m-auto"
               />
 
               <div className="flex flex-col flex-1 p-6 text-white justify-between">
                 <div>
-                  <h2 className="text-2xl font-bold">HandyHub</h2>
+                  <h2 className="text-2xl font-bold">CraftCart</h2>
                   <p className="text-gray-400 text-sm mt-2">
                     Built a full-stack e-commerce platform for buying and
                     selling handmade products, featuring secure local
@@ -49,13 +49,13 @@ const Project = () => {
 
                 <div className="flex gap-4 mt-4">
                   <a
-                    href="https://handyhub-1.onrender.com/"
+                    href="https://craftcart-6xmq.onrender.com/"
                     className="flex-1 px-4 py-2 text-center border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white transition"
                   >
                     Live Demo
                   </a>
                   <a
-                    href="https://github.com/TanyaMandloi05/HandyHub"
+                    href="https://github.com/E-CommercePlatform/CraftCart"
                     className="flex-1 px-4 py-2 text-center border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white transition"
                   >
                     GitHub
@@ -68,7 +68,7 @@ const Project = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-               viewport={{ once: true }}
+              viewport={{ once: true }}
               className="card  w-[350] h-[500] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
             >
               <img
@@ -114,7 +114,7 @@ const Project = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-               viewport={{ once: true }}
+              viewport={{ once: true }}
               className="card  w-[350] h-[500] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
             >
               <img
@@ -159,7 +159,7 @@ const Project = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-               viewport={{ once: true }}
+              viewport={{ once: true }}
               className="card  w-[350] h-[500] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
             >
               <img
@@ -199,7 +199,7 @@ const Project = () => {
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-               viewport={{ once: true }}
+              viewport={{ once: true }}
               className="card  w-[350] h-[500] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
             >
               <img
@@ -228,6 +228,111 @@ const Project = () => {
                   </button>
                   <a
                     href="https://github.com/TanyaMandloi05/Zerodha"
+                    className="flex-1 px-4 py-2 border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white text-center transition"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -150 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="card w-[350px] h-[500px] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
+            >
+              <img
+                src="/loan.png"
+                alt="CreditWise Loan Approval System"
+                className="w-[430px] p-2 rounded-t-xl m-auto"
+              />
+
+              <div className="flex flex-col flex-1 p-6 text-white justify-between">
+                <div>
+                  <h2 className="text-2xl font-bold">CreditWise</h2>
+
+                  <p className="text-gray-400 text-sm mt-2">
+                    Developed an AI-powered loan approval system using machine
+                    learning. Performed data preprocessing, EDA, feature
+                    encoding, scaling, and trained multiple classification
+                    models to predict loan approval. Built an interactive
+                    Streamlit web application for real-time predictions.
+                  </p>
+
+                  <p className="mt-3 text-purple-400 text-sm">
+                    Python, Pandas, NumPy, Scikit-learn, Streamlit, Matplotlib,
+                    Seaborn
+                  </p>
+                </div>
+
+                <div className="flex gap-4 mt-4">
+                  <a
+                    href="https://credit-wise-qvu7v9iu86esxeq7dp3ezq.streamlit.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 px-4 py-2 border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white text-center transition"
+                  >
+                    Live Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/TanyaMandloi05/Credit-wise"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 px-4 py-2 border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white text-center transition"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -150 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="card w-[350px] h-[500px] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
+            >
+              <img
+                src="/power_plant.png"
+                alt="Power Plant Energy Output Prediction"
+                className="w-[430px] p-2 rounded-t-xl m-auto"
+              />
+
+              <div className="flex flex-col flex-1 p-6 text-white justify-between">
+                <div>
+                  <h2 className="text-2xl font-bold">
+                    Power Plant Energy Prediction
+                  </h2>
+
+                  <p className="text-gray-400 text-sm mt-2">
+                    Built and deployed an Artificial Neural Network using
+                    PyTorch to predict power plant energy output. Implemented
+                    data preprocessing, feature scaling, PyTorch tensors,
+                    mini-batch training, and a complete training pipeline with
+                    backpropagation and Adam optimization.
+                  </p>
+
+                  <p className="mt-3 text-purple-400 text-sm">
+                    Python, PyTorch, Pandas, NumPy, Scikit-learn, Streamlit
+                  </p>
+                </div>
+
+                <div className="flex gap-4 mt-4">
+                  <a
+                    href="https://lnkd.in/dyHuDJyF"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 px-4 py-2 border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white text-center transition"
+                  >
+                    Live Demo
+                  </a>
+
+                  <a
+                    href="https://lnkd.in/dYTTyijd"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex-1 px-4 py-2 border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white text-center transition"
                   >
                     GitHub
