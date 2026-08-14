@@ -19,6 +19,57 @@ const Project = () => {
         <div className="flex justify-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div
+  initial={{ opacity: 0, x: -150 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, ease: "easeOut" }}
+  viewport={{ once: true }}
+  className="card w-[350px] h-[500px] sm:w-[400px] sm:h-[500px] border border-purple-400 ring hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] ring-purple-400 rounded-xl overflow-hidden flex flex-col bg-[#0a0a0a]"
+>
+  <img
+    src="/image.png"
+    alt="SnapScan"
+    className="w-[430px] p-2 rounded-t-xl m-auto"
+  />
+
+  <div className="flex flex-col flex-1 p-6 text-white justify-between">
+    <div>
+      <h2 className="text-2xl font-bold">SnapScan</h2>
+
+      <p className="text-gray-400 text-sm mt-2">
+        Built an AI-powered attendance management system using face and voice
+        recognition to automate classroom attendance. It includes teacher and
+        student authentication, subject creation and enrollment, attendance
+        capture with review and confirmation, and attendance records.
+      </p>
+
+      <p className="mt-3 text-purple-400 text-sm">
+        Python, Streamlit, Supabase, Face Recognition, Librosa, Resemblyzer,
+        bcrypt, Pillow
+      </p>
+    </div>
+
+    <div className="flex gap-4 mt-4">
+      <a
+        href="https://snap-scan-landing-ch9ia0d7d-tanyas-projects-94e9198c.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex-1 px-4 py-2 text-center border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white transition"
+      >
+        Live Demo
+      </a>
+
+      <a
+        href="https://github.com/TanyaMandloi05/SnapScan/tree/main"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex-1 px-4 py-2 text-center border border-purple-500 text-purple-500 rounded-lg font-medium hover:bg-purple-500 hover:text-white transition"
+      >
+        GitHub
+      </a>
+    </div>
+  </div>
+</motion.div>
+            <motion.div
               initial={{ opacity: 0, x: -150 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
