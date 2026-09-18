@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { CiMail, CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -65,6 +66,9 @@ const Contact = () => {
             </a>
             <a className="w-12 h-12 flex items-center justify-center rounded-full border border-purple-400 hover:bg-purple-400 text-white text-2xl">
               <BsTwitterX />
+            </a>
+             <a href="https://www.instagram.com/codekiyaa/" className="w-12 h-12 flex items-center justify-center rounded-full border border-purple-400 hover:bg-purple-400 text-white text-2xl">
+              <FaInstagram />
             </a>
           </div>
         </div>
