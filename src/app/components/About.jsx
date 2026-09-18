@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { BsGithub } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
 import { SiGeeksforgeeks } from "react-icons/si";
+import { FaInstagram } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -31,7 +32,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
              viewport={{ once: true }}
-            src="/Tanya.jpg"
+            src="/tanya5.jpg"
             className="h-90 w-90 rounded-full object-cover"
             alt="Tanya"
           />
@@ -74,6 +75,11 @@ const About = () => {
               <a href="https://www.geeksforgeeks.org/user/tanyamandfmmo/">
                 <button className="text-white text-xl bg-[#2F8D46] p-3 rounded-full border-2 border-white hover:shadow-md hover:shadow-[#2F8D46] hover:cursor-pointer transition mr-2">
                   <SiGeeksforgeeks />
+                </button>
+              </a>
+              <a href="https://www.instagram.com/codekiyaa/">
+                <button className="text-white text-xl bg-[#692f8d] p-3 rounded-full border-2 border-purple-400 hover:shadow-md hover:bg-purple-400 hover:cursor-pointer transition mr-2">
+                  <FaInstagram />
                 </button>
               </a>
             </div>
